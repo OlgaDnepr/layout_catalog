@@ -102,6 +102,11 @@ main {
   }
 
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
     width: 166px;
     height: 40px;
     border: 1px solid $button-color;
@@ -114,26 +119,14 @@ main {
     text-transform: uppercase;
     background-color: $button-color;
 
-    transition: background-color 300ms ease;
-
-    &-buy {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      text-decoration: none;
-      color: #fff;
-
-      transition: color 300ms ease;
-    }
-
-    &-buy:hover {
-      color: $button-color;
-    }
+    transition:
+      background-color 300ms ease,
+      color 300ms ease;
   }
+
   &__button:hover {
     background-color: #fff;
     border: 1px solid $button-color;
+    color: $button-color;
   }
 }
